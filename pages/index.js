@@ -5,7 +5,7 @@ const cocktails = [
       { name: 'Signature Whiskey Sour', ingr: 'Whiskey, lemon, orange', desc: 'Maraschino cherries, egg white', img: '/images/kiens_signature.jpg' },
       { name: 'Old-fashioned', ingr: 'Whiskey, bitters, sugar', desc: 'Maraschino cherries, orange', img: '/images/old-fashioned.png' },
       { name: 'Peruvian Pisco Sour', ingr: 'Peruvian Pisco', desc: 'key lime, egg white', img: '/images/pisco-sour.png' },
-      { name: 'Classic Margarita', ingr: 'Tequila, Grand Marnier', desc: 'lime juice', img: '/images/margarita.png' },
+      { name: 'Classic Margarita', ingr: 'Tequila, orange liqueur', desc: 'lime juice', img: '/images/margarita.png' },
     ],
   },
   {
@@ -29,12 +29,12 @@ const cocktails = [
   {
     category: 'Fresh & Fruity',
     items: [
+      { name: 'Mai Tai', desc: 'Rum, orange curaçao, orgeat', img: '/images/maitai.png' },
       { name: 'Cranberry Vodka', desc: 'Vokda, cranberry juice, lime', img: '/images/cran-vodka.png' },
-      { name: 'Aperol Spritz', desc: 'Aperol, prosecco, soda', img: '/images/aperol_spritz.jpg' },
-      { name: 'Tequila Sunrise', desc: 'Tequila, OJ, grenadine', img: '/images/tequila_sunrise.jpg' },
-      { name: 'French 75', desc: 'Gin, lemon, champagne', img: '/images/french_75.jpg' },
-      { name: 'Cosmopolitan', desc: 'Gin, tonic, cucumber', img: '/images/cucumber_gt.jpg' },
-      { name: 'Rum Punch', desc: 'Rum, OJ, pineapple', img: '/images/rum_punch.jpg' },
+      { name: 'Tequila Sunrise', desc: 'Tequila, orange juice, grenadine', img: '/images/tequila-sunrise.png' },
+      { name: 'Cosmopolitan', desc: 'Vodka, Cointreau, cranberry juice', img: '/images/cosmo.png' },
+      { name: 'Aperol Spritz', desc: 'Aperol, prosecco, soda', img: '/images/aperol-spritz.png' },
+      { name: 'French 75', desc: 'Gin, champagne, lemon juice', img: '/images/french75.png' }
     ],
   },
   {
