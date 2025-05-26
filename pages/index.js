@@ -54,13 +54,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#ededed] p-6 text-[black] font-serif">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold mb-4 text-center">Feliz cumpleaños,</h1>
-        <h1 className="text-4xl font-bold mb-8 text-center">MERY MADRID!</h1>
-        <h2 className="text-2xl font-bold mb-6 text-center">Drink Menu</h2>
+        <h1 className="text-4xl font-bold mb-2 text-center">Feliz cumpleaños,</h1>
+        <h1 className="text-4xl font-bold mb-6 text-center">MERY MADRID!</h1>
+        <h2 className="text-2xl font-bold mb-2 text-center">Drink Menu</h2>
         {cocktails.map((section) => (
           <div key={section.category} className="mb-12 text-center">
             <hr className="w-[70%] mx-auto my-1 border-t-1 border-gray-500" />
-            <h2 className="text-xl mb-4">{section.category}</h2>
+            <h2 className="text-xl mb-2">{section.category}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               {section.items.map((drink) => (
                 <div
