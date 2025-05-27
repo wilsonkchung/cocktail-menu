@@ -6,36 +6,36 @@ const cocktails = [
       { name: 'Whiskey Sour', ingr: 'Whiskey, lemon, orange', desc: 'Maraschino cherries, egg white', img: '/images/kiens_signature.jpg' },
       { name: 'Pisco Sour', ingr: 'Peruvian Pisco', desc: 'Key lime, egg white', img: '/images/pisco-sour.png' },
       { name: 'Old-fashioned', ingr: 'Whiskey, bitters, sugar', desc: 'Maraschino cherries, orange', img: '/images/old-fashioned.png' },
-      { name: 'Manhattan', ingr: 'Whiskey, sweet vermouth, bitters', desc: 'Maraschino cherries', img: '/images/manhattan.png' },
-    ],
+      { name: 'Manhattan', ingr: 'Whiskey, sweet vermouth, bitters', desc: 'Maraschino cherries', img: '/images/manhattan.png' }
+    ]
   },
   {
     category: 'Handcrafted Cocktails',
     category_es: "- Cócteles Hechos a Mano -",
     items: [
-      { name: 'Amaretto Sour', ingr: 'Amaretto liqueur, Bourbon', desc: 'Lemon juice, egg white', img: '/images/amaretto-sour.png' },
-      { name: 'Espresso Martini', ingr: 'Vodka, coffee liqueur', desc: 'Espresso shot', img: '/images/espresso-martini.png' },
-      { name: 'Classic Margarita', ingr: 'Tequila, orange liqueur',desc: 'Lime juice, salt', img: '/images/margarita.png' },
-      { name: 'Negroni', ingr: 'Gin, Campari, sweet vermouth', desc: ' Orange', img: '/images/negroni.png' },
+      { name: 'Cosmopolitan', ingr: 'Vodka, Cointreau', desc: 'Cranberry juice, lime juice', img: '/images/cosmo.png' },
       { name: 'Old Cuban', ingr: 'Aged rum, champange, bitters', desc: 'Lime juice, mint leaves', img: '/images/old-cuban.png' },
-      /* { name: '', ingr: '', desc: '', img: '/images/.png' }, */
-      /* { name: '', ingr: '', desc: '', img: '/images/.png' }, */
-      /* { name: '', ingr: '', desc: '', img: '/images/.png' }, */
-    ],
+      { name: 'Classic Martini', ingr: 'Gin or Vodka, dry vermouth', desc: 'Lemon peel or olives', img: '/images/martinis.png' },
+      { name: 'Espresso Martini', ingr: 'Vodka, coffee liqueur', desc: 'Espresso shot', img: '/images/espresso-martini.png' },
+      { name: 'Amaretto Sour', ingr: 'Amaretto liqueur, Bourbon', desc: 'Lemon juice, egg white', img: '/images/amaretto-sour.png' },
+      { name: 'Negroni', ingr: 'Gin, Campari, sweet vermouth', desc: ' Orange', img: '/images/negroni.png' },
+      { name: 'Classic Margarita', ingr: 'Tequila, orange liqueur',desc: 'Lime juice, salt', img: '/images/margarita.png' },
+      { name: 'Moscow Mule', ingr: 'Vodka, ginger beer', desc: 'Lime juice, mint leaves', img: '/images/moscow-mule.png' }
+    ]
   },
   {
     category: 'Fresh & Fruity',
     category_es: "- Fresco y Afrutado -",
     items: [
-      { name: 'Mai Tai', desc: 'Rum, orange curaçao, orgeat', img: '/images/maitai.png' },
-      { name: 'Rum Punch', desc: 'Rum, pineapple, orange, lime', img: '/images/rum-punch.png' },
-      { name: 'Shaken Daiquiri', desc: 'Rum, strawberies, lime', img: '/images/strawberry-daiquiri.png' },
-      { name: 'Malibu Bay Breeze', desc: 'Coco Rum, cranberry, pineapple', img: '/images/malibu.png' },
-      { name: 'Paloma', desc: 'Tequila, grapefruit juice, lime', img: '/images/paloma.png' },
-      { name: 'Tequila Sunrise', desc: 'Tequila, orange, grenadine', img: '/images/tequila-sunrise.png' },
-      { name: 'Cosmopolitan', desc: 'Vodka, Cointreau, cranberry', img: '/images/cosmo.png' },
-      { name: 'Cranberry Vodka', desc: 'Vokda, cranberry, lime', img: '/images/cran-vodka.png' }
-    ],
+      { name: 'Mai Tai', ingr: 'Dark rum, light rum, orgeat', desc: 'orange curaçao, lime, mint', img: '/images/maitai.png' },
+      { name: 'Shaken Daiquiri', ingr: 'Light Rum, lime juice', desc: 'Strawberry-infused syrup', img: '/images/strawberry-daiquiri.png' },
+      { name: 'Rum Punch', ingr: 'Dark rum, light rum', desc: 'pineapple, orange, lime', img: '/images/rum-punch.png' },
+      { name: 'Malibu Bay Breeze', ingr: 'Malibu Coconu Rum', desc: 'cranberry juice, pineapple juice', img: '/images/malibu.png' },
+      { name: 'Paloma', ingr: 'Tequila, grapefruit juice', desc: 'Lime juice, sea salt', img: '/images/paloma.png' },
+      { name: 'Tequila Sunrise', ingr: 'Tequila, orange juice', desc: 'Grenadine syrup, cherries', img: '/images/tequila-sunrise.png' },
+      { name: 'Cranberry Vodka', ingr: 'Vokda, cranberry juice', desc: 'Lime', img: '/images/cran-vodka.png' },
+      { name: 'S*x on the Beach', ingr: 'Vokda, Peach schnapps', desc: 'Cranberry, orange, pineapple', img: '/images/beach.png' }
+    ]
   },
   {
     category: 'Sparklings & Refreshings',
@@ -49,7 +49,7 @@ const cocktails = [
       { name: 'Scotch & Soda', desc: 'Scotch, sparkling water, lemon', img: '/images/scotch-soda.png' },
       { name: 'Gin & Tonic', desc: 'Gin, Tonic water, lime', img: '/images/gin-tonic.png' },
       { name: 'Tom Collins', desc: 'Dry gin, lemon juice, club soda', img: '/images/tom-collins.png' }
-    ],
+    ]
   },
   {
     category: 'Wine & Beer',
@@ -62,8 +62,8 @@ const cocktails = [
       { name: 'Prosecco', img: '/images/prosecco.png' },
       { name: 'Champagne', img: '/images/champagne.png' },
       { name: 'Lager Beer', img: '/images/lager-beer.png' },
-      { name: 'Dark Beer', img: '/images/dark-beer.png' },
-    ],
+      { name: 'Dark Beer', img: '/images/dark-beer.png' }
+    ]
   },
   {
     category: 'Non-Alcoholic',
@@ -73,10 +73,10 @@ const cocktails = [
         sub_category_es: "- Cócteles para Niños -",
         items: [
           { name: 'Fruit Punch', ingr: 'Orange, pineapple, cranberry', desc: 'Ginger Ale, strawberry, Lime', img: '/images/fruit-punch.png' },
-          { name: 'Strawberry Lemonade', ingr: 'Fresh strawberries', desc: 'Lemon Juice, sugar syrup', img: '/images/strawberry-lemonade.png' },
+          { name: 'STR. Lemonade', ingr: 'Fresh strawberries', desc: 'Lemon Juice, sugar syrup', img: '/images/strawberry-lemonade.png' },
           { name: 'Shirlery Temple', ingr: 'Sprite or Ginger Ale', desc: 'Grenadine syrup, cherries', img: '/images/shirley-temple.png' },
-          { name: 'Roy Rogers', ingr: 'Coca-Cola', desc: 'Grenadine syrup, cherries', img: '/images/roy-rogers.png' },
-        ],
+          { name: 'Roy Rogers', ingr: 'Coca-Cola', desc: 'Grenadine syrup, cherries', img: '/images/roy-rogers.png' }
+        ]
       },
       { sub_category: 'Juices & Sodas', 
         sub_category_es: "- Jugos y Gaseosas -",
@@ -93,10 +93,10 @@ const cocktails = [
           { name: 'Ginger Beer', img: '/images/.png' },
           { name: 'Tonic Water', img: '/images/.png' },
           { name: 'Club Soda', img: '/images/.png' }
-        ],
-      },
-    ],
-  },
+        ]
+      }
+    ]
+  }
 ];
 
 import { useEffect, useState } from 'react';
