@@ -4,7 +4,7 @@ const cocktails = [
     category_es: "- Especiales Artesanales -",
     items: [
       { name: 'Whiskey Sour', ingr: 'Whiskey, lemon, orange', desc: 'Maraschino cherries, egg white', img: '/images/kiens_signature.jpg' },
-      { name: 'Pisco Sour', ingr: 'Peruvian Pisco', desc: 'key lime, egg white', img: '/images/pisco-sour.png' },
+      { name: 'Pisco Sour', ingr: 'Peruvian Pisco', desc: 'Key lime, egg white', img: '/images/pisco-sour.png' },
       { name: 'Old-fashioned', ingr: 'Whiskey, bitters, sugar', desc: 'Maraschino cherries, orange', img: '/images/old-fashioned.png' },
       { name: 'Manhattan', ingr: 'Whiskey, sweet vermouth, bitters', desc: 'Maraschino cherries', img: '/images/manhattan.png' },
     ],
@@ -13,12 +13,14 @@ const cocktails = [
     category: 'Handcrafted Cocktails',
     category_es: "- Cócteles Hechos a Mano -",
     items: [
-      { name: 'Amaretto Sour', desc: '', img: '/images/.png' },
-      { name: 'Espresso Martini', desc: '', img: '/images/.png' },
-      { name: 'Classic Margarita',desc: 'Tequila, orange liqueur, lime', img: '/images/margarita.png' },
-      { name: 'Negroni', desc: 'Gin, Campari, sweet vermouth', img: '/images/negroni.png' },
-      { name: 'Sidecar', desc: '', img: '/images/.png' },
-      { name: 'Old Cuban', desc: '', img: '/images/.png' },
+      { name: 'Amaretto Sour', ingr: 'Amaretto liqueur, Bourbon', desc: 'Lemon juice, egg white', img: '/images/amaretto-sour.png' },
+      { name: 'Espresso Martini', ingr: 'Vodka, coffee liqueur', desc: 'Espresso shot', img: '/images/espresso-martini.png' },
+      { name: 'Classic Margarita', ingr: 'Tequila, orange liqueur',desc: 'Lime juice, salt', img: '/images/margarita.png' },
+      { name: 'Negroni', ingr: 'Gin, Campari, sweet vermouth', desc: ' Orange', img: '/images/negroni.png' },
+      { name: 'Old Cuban', ingr: 'Aged rum, champange, bitters', desc: 'Lime juice, mint leaves', img: '/images/old-cuban.png' },
+      /* { name: '', ingr: '', desc: '', img: '/images/.png' }, */
+      /* { name: '', ingr: '', desc: '', img: '/images/.png' }, */
+      /* { name: '', ingr: '', desc: '', img: '/images/.png' }, */
     ],
   },
   {
@@ -53,14 +55,14 @@ const cocktails = [
     category: 'Wine & Beer',
     category_es: "- Vino y Cerveza -",
     items: [
-      { name: 'Red Wine', img: '/images/.png' },
-      { name: 'White Wine', img: '/images/.png' },
-      { name: 'Sangria', img: '/images/.png' },
-      { name: 'Moscato', img: '/images/.png' },
-      { name: 'Prosecco', img: '/images/.png' },
-      { name: 'Champagne', img: '/images/.png' },
-      { name: 'Lager Beer', img: '/images/.png' },
-      { name: 'Dark Beer', img: '/images/.png' },
+      { name: 'Red Wine', img: '/images/red-wine.png' },
+      { name: 'White Wine', img: '/images/white-wine.png' },
+      { name: 'Sangria', img: '/images/sangria.png' },
+      { name: 'Moscato', img: '/images/moscato.png' },
+      { name: 'Prosecco', img: '/images/prosecco.png' },
+      { name: 'Champagne', img: '/images/champagne.png' },
+      { name: 'Lager Beer', img: '/images/lager-beer.png' },
+      { name: 'Dark Beer', img: '/images/dark-beer.png' },
     ],
   },
   {
@@ -70,10 +72,10 @@ const cocktails = [
       { sub_category: 'Mocktails for Kids', 
         sub_category_es: "- Cócteles para Niños -",
         items: [
-          { name: 'Fruit Punch', img: '/images/.png' },
+          { name: 'Fruit Punch', ingr: 'Orange, pineapple, cranberry', desc: 'Ginger Ale, strawberry, Lime', img: '/images/fruit-punch.png' },
           { name: '', img: '/images/.png' },
-          { name: 'Shirlery Temple', img: '/images/.png' },
-          { name: 'Roy Rogers', img: '/images/.png' },
+          { name: 'Shirlery Temple', ingr: 'Sprite or Ginger Ale', desc: 'Grenadine syrup, cherries', img: '/images/shirley-temple.png' },
+          { name: 'Roy Rogers', ingr: 'Coca-Cola', desc: 'Grenadine syrup, cherries', img: '/images/roy-rogers.png' },
         ],
       },
       { sub_category: 'Juices & Sodas', 
@@ -186,12 +188,19 @@ export default function Home() {
                   <h3 className="text-xs sm:text-sm font-normal mb-4 italic">{group.sub_category_es}</h3>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
                     {group.items.map((drink, index) => (
-                      <div key={`${drink.name}-${index}`} className="bg-white rounded-xl shadow-md p-2">
+                      <div key={`${drink.name}-${index}`} className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition">
                         {/* ✅ Only show image if it's the "Mocktails for Kids" group */}
                         {section.category === 'Non-Alcoholic' && group.sub_category === 'Mocktails for Kids' && (
                           <img src={drink.img} alt={drink.name} className="w-full aspect-square object-cover" />
                         )}
-                        <h4 className="text-base sm:text-lg font-medium">{drink.name}</h4>
+                        <div className="p-2">
+                          <h4 className="text-base sm:text-lg font-medium">{drink.name}</h4>
+                          {!['Juices & Sodas'].includes(group.sub_category) && (
+                            <hr className="w-18 mx-auto my-2 border-t-1 border-gray-500" />
+                          )}
+                          <p className="text-[10px] sm:text-sm text-gray-500">{drink.ingr}</p>
+                          <p className="text-[10px] sm:text-sm text-gray-500">{drink.desc}</p>
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -212,8 +221,8 @@ export default function Home() {
                     )}
                     <div className="p-2">
                       <h4 className="text-base sm:text-lg font-medium">{drink.name}</h4>
-                      {/* Show line only if not Wine & Beer and Non-Alcoholic */}
-                      {!['Wine & Beer', 'Non-Alcoholic'].includes(section.category) && (
+                      {/* Show line only if not Wine & Beer */}
+                      {!['Wine & Beer'].includes(section.category) && (
                         <hr className="w-18 mx-auto my-2 border-t-1 border-gray-500" />
                       )}
                       <p className="text-[10px] sm:text-sm text-gray-500">{drink.ingr}</p>
