@@ -3,10 +3,10 @@ const cocktails = [
     category: " Artisan Specials",
     category_es: "- Especiales Artesanales -",
     items: [
-      { name: 'Whiskey Sour', ingr: 'Whiskey, lemon, orange', desc: 'Maraschino cherries, egg white', img: '/images/kiens_signature.jpg' },
+      { name: 'Whiskey Sour', ingr: 'Whiskey, egg white, orange', desc: 'Maraschino cherries, lemon', img: '/images/kiens_signature.jpg' },
       { name: 'Pisco Sour', ingr: 'Peruvian Pisco', desc: 'Key lime, egg white', img: '/images/pisco-sour.png' },
       { name: 'Old-fashioned', ingr: 'Whiskey, bitters, sugar', desc: 'Maraschino cherries, orange', img: '/images/old-fashioned.png' },
-      { name: 'Manhattan', ingr: 'Whiskey, sweet vermouth, bitters', desc: 'Maraschino cherries', img: '/images/manhattan.png' }
+      { name: 'Manhattan', ingr: 'Whiskey, sweet vermouth', desc: 'Maraschino cherries, bitters', img: '/images/manhattan.png' }
     ]
   },
   {
@@ -14,11 +14,11 @@ const cocktails = [
     category_es: "- Cócteles Hechos a Mano -",
     items: [
       { name: 'Cosmopolitan', ingr: 'Vodka, Cointreau', desc: 'Cranberry juice, lime juice', img: '/images/cosmo.png' },
-      { name: 'Old Cuban', ingr: 'Aged rum, champange, bitters', desc: 'Lime juice, mint leaves', img: '/images/old-cuban.png' },
+      { name: 'Old Cuban', ingr: 'Rum, champange, bitters', desc: 'Lime juice, mint leaves', img: '/images/old-cuban.png' },
       { name: 'Classic Martini', ingr: 'Gin or Vodka, dry vermouth', desc: 'Lemon peel or olives', img: '/images/martinis.png' },
       { name: 'Espresso Martini', ingr: 'Vodka, coffee liqueur', desc: 'Espresso shot', img: '/images/espresso-martini.png' },
       { name: 'Amaretto Sour', ingr: 'Amaretto liqueur, Bourbon', desc: 'Lemon juice, egg white', img: '/images/amaretto-sour.png' },
-      { name: 'Negroni', ingr: 'Gin, Campari, sweet vermouth', desc: ' Orange', img: '/images/negroni.png' },
+      { name: 'Negroni', ingr: 'Gin, Campari', desc: 'Sweet vermouth, orange', img: '/images/negroni.png' },
       { name: 'Classic Margarita', ingr: 'Tequila, orange liqueur',desc: 'Lime juice, salt', img: '/images/margarita.png' },
       { name: 'Moscow Mule', ingr: 'Vodka, ginger beer', desc: 'Lime juice, mint leaves', img: '/images/moscow-mule.png' }
     ]
@@ -30,7 +30,7 @@ const cocktails = [
       { name: 'Mai Tai', ingr: 'Dark rum, light rum, orgeat', desc: 'orange curaçao, lime, mint', img: '/images/maitai.png' },
       { name: 'Shaken Daiquiri', ingr: 'Light Rum, lime juice', desc: 'Strawberry-infused syrup', img: '/images/strawberry-daiquiri.png' },
       { name: 'Rum Punch', ingr: 'Dark rum, light rum', desc: 'pineapple, orange, lime', img: '/images/rum-punch.png' },
-      { name: 'Malibu Bay Breeze', ingr: 'Malibu Coconu Rum', desc: 'cranberry juice, pineapple juice', img: '/images/malibu.png' },
+      { name: 'Malibu Bay Breeze', ingr: 'Malibu Coconu Rum', desc: 'cranberry, pineapple', img: '/images/malibu.png' },
       { name: 'Paloma', ingr: 'Tequila, grapefruit juice', desc: 'Lime juice, sea salt', img: '/images/paloma.png' },
       { name: 'Tequila Sunrise', ingr: 'Tequila, orange juice', desc: 'Grenadine syrup, cherries', img: '/images/tequila-sunrise.png' },
       { name: 'Cranberry Vodka', ingr: 'Vokda, cranberry juice', desc: 'Lime', img: '/images/cran-vodka.png' },
@@ -198,8 +198,8 @@ export default function Home() {
                           {!['Juices & Sodas'].includes(group.sub_category) && (
                             <hr className="w-18 mx-auto my-2 border-t-1 border-gray-500" />
                           )}
-                          <p className="text-[10px] sm:text-sm text-gray-500">{drink.ingr}</p>
-                          <p className="text-[10px] sm:text-sm text-gray-500">{drink.desc}</p>
+                          <p className="text-[10px] sm:text-[11px] text-gray-500">{drink.ingr}</p>
+                          <p className="text-[10px] sm:text-[11px] text-gray-500">{drink.desc}</p>
                         </div>
                       </div>
                     ))}
@@ -225,8 +225,8 @@ export default function Home() {
                       {!['Wine & Beer'].includes(section.category) && (
                         <hr className="w-18 mx-auto my-2 border-t-1 border-gray-500" />
                       )}
-                      <p className="text-[10px] sm:text-sm text-gray-500">{drink.ingr}</p>
-                      <p className="text-[10px] sm:text-sm text-gray-500">{drink.desc}</p>
+                      <p className="text-[10px] sm:text-[11px] text-gray-500">{drink.ingr}</p>
+                      <p className="text-[10px] sm:text-[11px] text-gray-500">{drink.desc}</p>
                     </div>
                   </div>
                 ))}
