@@ -73,7 +73,7 @@ const cocktails = [
         sub_category_es: "- Cócteles para Niños -",
         items: [
           { name: 'Fruit Punch', ingr: 'Orange, pineapple, cranberry', desc: 'Ginger Ale, strawberry, Lime', img: '/images/fruit-punch.png' },
-          { name: '', img: '/images/.png' },
+          { name: 'Strawberry Lemonade', ingr: 'Fresh strawberries', desc: 'Lemon Juice, sugar syrup', img: '/images/strawberry-lemonade.png' },
           { name: 'Shirlery Temple', ingr: 'Sprite or Ginger Ale', desc: 'Grenadine syrup, cherries', img: '/images/shirley-temple.png' },
           { name: 'Roy Rogers', ingr: 'Coca-Cola', desc: 'Grenadine syrup, cherries', img: '/images/roy-rogers.png' },
         ],
@@ -184,7 +184,7 @@ export default function Home() {
             {section.items[0]?.sub_category ? (
               section.items.map((group) => (
                 <div key={group.sub_category} className="mb-6">
-                  <h3 className="text-sm sm:text-base font-medium mb">{group.sub_category}</h3>
+                  <h3 className="text-sm sm:text-base font-medium mt-8">{group.sub_category}</h3>
                   <h3 className="text-xs sm:text-sm font-normal mb-4 italic">{group.sub_category_es}</h3>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
                     {group.items.map((drink, index) => (
