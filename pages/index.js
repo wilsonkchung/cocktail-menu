@@ -33,8 +33,8 @@ const cocktails = [
       { name: 'Malibu Bay Breeze', ingr: 'Malibu Coconu Rum', desc: 'cranberry, pineapple', img: '/images/malibu.png' },
       { name: 'Paloma', ingr: 'Tequila, grapefruit juice', desc: 'Lime juice, sea salt', img: '/images/paloma.png' },
       { name: 'Tequila Sunrise', ingr: 'Tequila, orange juice', desc: 'Grenadine syrup, cherries', img: '/images/tequila-sunrise.png' },
-      { name: 'Cranberry Vodka', ingr: 'Vokda, cranberry juice', desc: 'Lime', img: '/images/cran-vodka.png' },
-      { name: 'S*x on the Beach', ingr: 'Vokda, Peach schnapps', desc: 'Cranberry, orange, pineapple', img: '/images/beach.png' }
+      { name: 'Cranberry Vodka', ingr: 'Vodka, cranberry juice', desc: 'Lime', img: '/images/cran-vodka.png' },
+      { name: 'S*x on the Beach', ingr: 'Vodka, Peach schnapps', desc: 'Cranberry, orange, pineapple', img: '/images/beach.png' }
     ]
   },
   {
