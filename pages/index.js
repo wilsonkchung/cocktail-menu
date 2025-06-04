@@ -138,8 +138,8 @@ export default function Home() {
     <div className="min-h-screen bg-white p-6 text-[black] font-serif"> {/*  bg-[#ededed]  */}
       <div className="max-w-6xl mx-auto">
         <div className="text-center flex flex-col sm:flex-row justify-center flex-wrap gap-x-2 mb-6 bg-gradient-to-r from-orange-400 via-pink-500 to-red-400 bg-clip-text text-transparent animate-pulse drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
-          <h1 className="text-4xl sm:text-6xl font-bold mb-2">Feliz cumpleaños,</h1>
-          <h1 className="text-5xl sm:text-6xl font-bold text-red-500">Mery Madrid!</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-2">Feliz cumpleaños,</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-red-500">Mery Madrid!</h1>
         </div>
 
           <h1 className="">
@@ -148,33 +148,33 @@ export default function Home() {
         <h1 className="text-2xl sm:text-3xl font-bold mb-0 text-center">Drink Menu</h1>
         <h1 className="text-xl sm:text-2xl font-medium mb-4 text-center italic">- Menú de Bebidas -</h1>
 
-        <div className="text-xs sm:text-sm font-semibold text-center mb-8 space-y-2">
-          <div className="flex flex-col gap-1 max-w-md mx-auto">
-            <a href="#artisan-specials" className="flex justify-between border px-4 py-2 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+        <div className="text-sm font-semibold text-center mb-8 space-y-2">
+          <div className="flex flex-col gap-1 max-w-[26rem] mx-auto">
+            <a href="#artisan-specials" className="flex justify-between border px-2 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
               <span className="text-left">Artisan Specials</span>
               <span className="text-right">Especiales Artesanales</span>
             </a>
-            <a href="#handcrafted-cocktails" className="flex justify-between border px-4 py-2 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+            <a href="#handcrafted-cocktails" className="flex justify-between border px-2 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
               <span className="text-left">Handcrafted Cocktails</span>
               <span className="text-right">Cócteles Hechos a Mano</span>
             </a>
-            <a href="#fresh-&-fruity" className="flex justify-between border px-4 py-2 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+            <a href="#fresh-&-fruity" className="flex justify-between border px-2 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
               <span className="text-left">Fresh & Fruity</span>
               <span className="text-right">Fresco y Afrutado</span>
             </a>
-            <a href="#sparklings-&-refreshings" className="flex justify-between border px-4 py-2 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+            <a href="#sparklings-&-refreshings" className="flex justify-between border px-2 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
               <span className="text-left">Sparklings & Refreshings</span>
               <span className="text-right">Espumosos y Refrescantes</span>
             </a>
-            <a href="#wine-&-beer" className="flex justify-between border px-4 py-2 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+            <a href="#wine-&-beer" className="flex justify-between border px-2 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
               <span className="text-left">Wine & Beer</span>
               <span className="text-right">Vino y Cerveza</span>
             </a>
-            <a href="#non-alcoholic" className="flex justify-between border px-4 py-2 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+            <a href="#non-alcoholic" className="flex justify-between border px-2 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
               <span className="text-left">Mocktails for Kids</span>
               <span className="text-right">Cócteles para Niños</span>
             </a>
-            <a href="#non-alcoholic" className="flex justify-between border px-4 py-2 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+            <a href="#non-alcoholic" className="flex justify-between border px-2 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
               <span className="text-left">Juices & Sodas</span>
               <span className="text-right">Jugos y Gaseosas</span>
             </a>
