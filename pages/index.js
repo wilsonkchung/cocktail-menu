@@ -1,5 +1,6 @@
 const cocktails = [
-    {
+    // specials
+  {
     category: " Artisan Specials",
     category_es: "- Especiales Artesanales -",
     items: [
@@ -9,6 +10,7 @@ const cocktails = [
       { name: 'Manhattan', ingr: 'Whiskey, sweet vermouth', desc: 'Maraschino cherries, bitters', img: '/images/manhattan.png' }
     ]
   },
+  // cocktails
   {
     category: 'Handcrafted Cocktails',
     category_es: "- Cócteles Hechos a Mano -",
@@ -23,6 +25,7 @@ const cocktails = [
       { name: 'Moscow Mule', ingr: 'Vodka, ginger beer', desc: 'Lime juice, mint leaves', img: '/images/moscow-mule.png' }
     ]
   },
+  // fruity
   {
     category: 'Fresh & Fruity',
     category_es: "- Fresco y Afrutado -",
@@ -37,6 +40,7 @@ const cocktails = [
       { name: 'S*x on the Beach', ingr: 'Vodka, Peach schnapps', desc: 'Cranberry, orange, pineapple', img: '/images/beach.png' }
     ]
   },
+  // bubbles
   {
     category: 'Sparklings & Refreshings',
     category_es: "- Espumosos y Refrescantes -",
@@ -51,6 +55,7 @@ const cocktails = [
       { name: 'Tom Collins', desc: 'Dry gin, lemon juice, club soda', img: '/images/tom-collins.png' }
     ]
   },
+  // wine beer
   {
     category: 'Wine & Beer',
     category_es: "- Vino y Cerveza -",
@@ -65,6 +70,7 @@ const cocktails = [
       { name: 'Dark Beer', img: '/images/dark-beer.png' }
     ]
   },
+  // non-alcoholics
   {
     category: 'Non-Alcoholic',
     category_es: "- Sin Alcohol -",
