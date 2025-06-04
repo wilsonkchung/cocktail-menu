@@ -129,7 +129,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#ededed] p-6 text-[black] font-serif">
+    <div className="min-h-screen bg-white p-6 text-[black] font-serif"> {/*  bg-[#ededed]  */}
       <div className="max-w-6xl mx-auto">
         <div className="text-center flex flex-col sm:flex-row justify-center flex-wrap gap-x-2 mb-6 bg-gradient-to-r from-orange-400 via-pink-500 to-red-400 bg-clip-text text-transparent animate-pulse drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
           <h1 className="text-4xl sm:text-6xl font-bold mb-2">Feliz cumpleaños,</h1>
