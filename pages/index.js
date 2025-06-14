@@ -6,8 +6,8 @@ const cocktails = [
     items: [
       { name: 'Whiskey Sour', ingr: 'Whiskey, egg white, orange', desc: 'Maraschino cherries, lemon', img: '/images/kiens_signature.jpg' },
       { name: 'Pisco Sour', ingr: 'Peruvian Pisco', desc: 'Key lime, egg white', img: '/images/pisco-sour.png' },
-      { name: 'Old-fashioned', ingr: 'Whiskey, bitters, sugar', desc: 'Maraschino cherries, orange', img: '/images/old-fashioned.png' },
-      { name: 'Manhattan', ingr: 'Whiskey, sweet vermouth', desc: 'Maraschino cherries, bitters', img: '/images/manhattan.png' }
+      //{ name: 'Old-fashioned', ingr: 'Whiskey, bitters, sugar', desc: 'Maraschino cherries, orange', img: '/images/old-fashioned.png' },
+      //{ name: 'Manhattan', ingr: 'Whiskey, sweet vermouth', desc: 'Maraschino cherries, bitters', img: '/images/manhattan.png' }
     ]
   },
   // cocktails
@@ -17,10 +17,10 @@ const cocktails = [
     items: [
       { name: 'Cosmopolitan', ingr: 'Vodka, Cointreau', desc: 'Cranberry juice, lime juice', img: '/images/cosmo.png' },
       { name: 'Old Cuban', ingr: 'Rum, champange, bitters', desc: 'Lime juice, mint leaves', img: '/images/old-cuban.png' },
-      { name: 'Classic Martini', ingr: 'Gin or Vodka, dry vermouth', desc: 'Lemon peel or olives', img: '/images/martinis.png' },
-      { name: 'Espresso Martini', ingr: 'Vodka, coffee liqueur', desc: 'Espresso shot', img: '/images/espresso-martini.png' },
+      { name: 'Classic Martini', ingr: 'Vodka, dry vermouth', desc: 'Lemon peel or olives', img: '/images/martinis.png' }, //Gin or 
+      //{ name: 'Espresso Martini', ingr: 'Vodka, coffee liqueur', desc: 'Espresso shot', img: '/images/espresso-martini.png' },
       { name: 'Amaretto Sour', ingr: 'Amaretto liqueur, Bourbon', desc: 'Lemon juice, egg white', img: '/images/amaretto-sour.png' },
-      { name: 'Negroni', ingr: 'Gin, Campari', desc: 'Sweet vermouth, orange', img: '/images/negroni.png' },
+      //{ name: 'Negroni', ingr: 'Gin, Campari', desc: 'Sweet vermouth, orange', img: '/images/negroni.png' },
       { name: 'Classic Margarita', ingr: 'Tequila, orange liqueur',desc: 'Lime juice, salt', img: '/images/margarita.png' },
       { name: 'Moscow Mule', ingr: 'Vodka, ginger beer', desc: 'Lime juice, mint leaves', img: '/images/moscow-mule.png' }
     ]
@@ -45,14 +45,14 @@ const cocktails = [
     category: 'Sparklings & Refreshings',
     category_es: "- Espumosos y Refrescantes -",
     items: [
-      { name: 'Aperol Spritz', desc: 'Aperol, prosecco, soda', img: '/images/aperol-spritz.png' },
-      { name: 'French 75', desc: 'Gin, champagne, lemon juice', img: '/images/french75.png' },
+      //{ name: 'Aperol Spritz', desc: 'Aperol, prosecco, soda', img: '/images/aperol-spritz.png' },
+      //{ name: 'French 75', desc: 'Gin, champagne, lemon juice', img: '/images/french75.png' },
       { name: 'Mimosa', desc: 'Prosecco, orange, strawberry', img: '/images/mimosa.png' },
       { name: 'Mojito', desc: 'Rum, lime, mint, soda', img: '/images/mojito.png' },
       { name: 'Cuba Libre', desc: 'Rum, Coca-Cola, lime juice', img: '/images/cuba-libre.png' },
       { name: 'Scotch & Soda', desc: 'Scotch, sparkling water, lemon', img: '/images/scotch-soda.png' },
-      { name: 'Gin & Tonic', desc: 'Gin, Tonic water, lime', img: '/images/gin-tonic.png' },
-      { name: 'Tom Collins', desc: 'Dry gin, lemon juice, club soda', img: '/images/tom-collins.png' }
+      //{ name: 'Gin & Tonic', desc: 'Gin, Tonic water, lime', img: '/images/gin-tonic.png' },
+      //{ name: 'Tom Collins', desc: 'Dry gin, lemon juice, club soda', img: '/images/tom-collins.png' }
     ]
   },
   // wine beer
@@ -92,12 +92,12 @@ const cocktails = [
           { name: 'Orange Juice', img: '/images/.png' },
           { name: 'Pineapple Juice', img: '/images/.png' },
           { name: 'Coca-Cola', img: '/images/.png' },
-          { name: 'Orange Soda', img: '/images/.png' },
+          //{ name: 'Orange Soda', img: '/images/.png' },
           { name: 'Sprite', img: '/images/.png' },
-          { name: 'Ginger Ale', img: '/images/.png' },
-          { name: 'Root Beer', img: '/images/.png' },
+          //{ name: 'Ginger Ale', img: '/images/.png' },
+          //{ name: 'Root Beer', img: '/images/.png' },
           { name: 'Ginger Beer', img: '/images/.png' },
-          { name: 'Tonic Water', img: '/images/.png' },
+          //{ name: 'Tonic Water', img: '/images/.png' },
           { name: 'Club Soda', img: '/images/.png' }
         ]
       }
