@@ -137,20 +137,27 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white p-6 text-[black] font-serif"> {/*  bg-[#ededed]  */}
       <div className="max-w-6xl mx-auto">
+        
         <div className="text-center flex flex-col sm:flex-row justify-center flex-wrap gap-x-2 mb-6 bg-gradient-to-r from-orange-400 via-pink-500 to-red-400 bg-clip-text text-transparent animate-pulse drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
+
+          {/* Event Banner */}
           {/*
           <h1 className="text-4xl md:text-6xl font-bold mb-2">Feliz cumpleaños,</h1>
           <h1 className="text-5xl md:text-6xl font-bold text-red-500">Mery Madrid!</h1>
           */}
-          
+
+          <h1 className="text-4xl md:text-5xl font-bold text-red-500 uppercase">Beverage Menu</h1>
         </div>
-
-          <h1 className="">
-          </h1>
         
-        <h1 className="text-2xl sm:text-3xl font-bold mb-0 text-center">Drink Menu</h1>
+        {/* Menu Title whn Event Banner is on */}
+        {/*
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">Drink Menu</h1>
         <h1 className="text-xl sm:text-2xl font-medium mb-4 text-center italic">- Menú de Bebidas -</h1>
+        */}
 
+
+        {/* english/spanish categories */}
+        {/*
         <div className="text-sm font-semibold text-center mb-8 space-y-2">
           <div className="flex flex-col gap-1 max-w-[26rem] mx-auto">
             <a href="#artisan-specials" className="flex justify-between border px-2 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
@@ -183,6 +190,36 @@ export default function Home() {
             </a>
           </div>
         </div>
+        */}
+
+
+        {/* english categories */}
+        <div className="text-sm font-semibold text-center mb-8 space-y-2">
+          <div className="flex flex-col gap-1 max-w-[18rem] mx-auto">
+            <a href="#artisan-specials" className="flex justify-center border px-1 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+              <span className="text-left">Artisan Specials</span>
+            </a>
+            <a href="#handcrafted-cocktails" className="flex justify-center border px-1 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+              <span className="text-left">Handcrafted Cocktails</span>
+            </a>
+            <a href="#fresh-&-fruity" className="flex justify-center border px-1 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+              <span className="text-left">Fresh & Fruity</span>
+            </a>
+            <a href="#sparklings-&-refreshings" className="flex justify-center border px-1 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+              <span className="text-left">Sparklings & Refreshings</span>
+            </a>
+            <a href="#wine-&-beer" className="flex justify-center border px-1 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+              <span className="text-left">Wine & Beer</span>
+            </a>
+            <a href="#non-alcoholic" className="flex justify-center border px-1 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+              <span className="text-left">Mocktails for Kids</span>
+            </a>
+            <a href="#non-alcoholic" className="flex justify-center border px-1 py-1 rounded-xl hover:text-orange-500 bg-gradient-to-r from-orange-200 via-pink-300 to-red-300 active:scale-80">
+              <span className="text-left">Juices & Sodas</span>
+            </a>
+          </div>
+        </div>
+
 
         {cocktails.map((section) => (
           <div key={section.category} id={section.category.toLowerCase().replace(/\s+/g, '-')} className="mb-12 text-center">
