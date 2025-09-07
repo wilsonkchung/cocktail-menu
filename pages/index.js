@@ -284,7 +284,7 @@ export default function Home() {
       
       {/* Footer goes here, INSIDE the return block */}
       <footer className="text-black text-center text-sm py-2 mt-18">
-        © {new Date().getFullYear()} Kien Chung. All rights reserved.
+        © {new Date().getFullYear()} Wilson (Kien) Chung. All rights reserved.
       </footer>
       
       <button
