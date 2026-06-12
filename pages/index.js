@@ -1,10 +1,19 @@
 const cocktails = [
+    // today's specials
+  {
+    category: " Today's Specials",
+    category_es: "- Especiales del día -",
+    items: [
+      { name: 'Whisky Sour', ingr: 'Whiskey, egg white, orange', desc: 'Maraschino cherries, lemon', img: '/images/whisky-sour.png' },
+      { name: 'Virgin Strawberry Mint Mojito', ingr: 'Fresh strawberries, fresh limes', desc: 'Mint leaves, cane sugar', img: '/images/strawberrymint-mojito.png' },
+    ]
+  }, 
     // specials
   {
-    category: " Artisan Specials",
-    category_es: "- Especiales Artesanales -",
+    category: " Kien's Signatures",
+    category_es: "- Especialidades del Kien -",
     items: [
-      { name: 'Whiskey Sour', ingr: 'Whiskey, egg white, orange', desc: 'Maraschino cherries, lemon', img: '/images/kiens_signature.jpg' },
+      { name: 'Kien\'s Whiskey Sour', ingr: 'Whiskey, egg white, orange', desc: 'Maraschino cherries, lemon, yuzu', img: '/images/kiens_signature.jpg' },
       { name: 'Pisco Sour', ingr: 'Peruvian Pisco', desc: 'Key lime, egg white', img: '/images/pisco-sour.png' },
       { name: 'Old-fashioned', ingr: 'Whiskey, bitters, sugar', desc: 'Maraschino cherries, orange', img: '/images/old-fashioned.png' },
       { name: 'Manhattan', ingr: 'Whiskey, sweet vermouth', desc: 'Maraschino cherries, bitters', img: '/images/manhattan.png' }
@@ -141,19 +150,18 @@ export default function Home() {
         <div className="text-center flex flex-col sm:flex-row justify-center flex-wrap gap-x-2 mb-6 bg-gradient-to-r from-orange-400 via-pink-500 to-red-400 bg-clip-text text-transparent animate-pulse drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]">
 
           {/* Event Banner */}
-          {/*
-          <h1 className="text-4xl md:text-6xl font-bold mb-2">Feliz cumpleaños,</h1>
-          <h1 className="text-5xl md:text-6xl font-bold text-red-500">Mery Madrid!</h1>
-          */}
-
-          <h1 className="text-4xl md:text-5xl font-bold text-red-500 uppercase">Beverage Menu</h1>
+          
+          <h1 className="text-4xl md:text-6xl font-bold mb-2">Kien's 30th birthday!</h1>
+          {/* <h1 className="text-5xl md:text-6xl font-bold text-red-500">name?</h1>*/}
+          <br />
+          {/* <h1 className="text-4xl md:text-5xl font-bold text-red-500 uppercase">Beverage Menu</h1> */}
         </div>
         
         {/* Menu Title whn Event Banner is on */}
-        {/*
-        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">Drink Menu</h1>
-        <h1 className="text-xl sm:text-2xl font-medium mb-4 text-center italic">- Menú de Bebidas -</h1>
-        */}
+        
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">DRINK MENU</h1>
+        {/*<h1 className="text-xl sm:text-2xl font-medium mb-4 text-center italic">- Menú de Bebidas -</h1>*/}
+        
 
 
         {/* english/spanish categories */}
