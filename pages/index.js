@@ -4,7 +4,7 @@ const cocktails = [
     category: " Today's Specials",
     category_es: "- Especiales del día -",
     items: [
-      { name: 'Whisky Sour', ingr: 'Whiskey, egg white, orange', desc: 'Maraschino cherries, lemon', img: '/images/whisky-sour.png' },
+      { name: 'Whiskey Sour', ingr: 'Whiskey, egg white, orange', desc: 'Maraschino cherries, lemon', img: '/images/whisky-sour.png' },
       { name: 'Virgin Strawberry Mint Mojito', ingr: 'Fresh strawberries, fresh limes', desc: 'Mint leaves, cane sugar', img: '/images/strawberrymint-mojito.png' },
     ]
   }, 
